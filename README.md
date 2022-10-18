@@ -1,3 +1,9 @@
+#### Links
+
+- About
+- GitHub
+- LinkedIn
+
 # Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui) and TypeScript
 
 This example features how to use [chakra-ui](https://github.com/chakra-ui/chakra-ui) as the component library within a Next.js app with TypeScript.
@@ -18,9 +24,13 @@ Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_mediu
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
+Created with Create Next App
+
 ```bash
-npx create-next-app --example with-chakra-ui with-chakra-ui-app
+npx create-next-app --example with-chakra-ui
 ```
+
+Created with `create-next-app
 
 ```bash
 yarn create next-app --example with-chakra-ui with-chakra-ui-app
