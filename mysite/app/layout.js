@@ -4,7 +4,13 @@ export default function RootLayout({ children }) {
   return (
     <html>
       <head></head>
-      <body>{children}</body>
+      <body>
+        <main>
+          <nav></nav>
+          {children}
+        </main>
+        <footer>Greetings from the footer</footer>
+      </body>
     </html>
   );
 }
