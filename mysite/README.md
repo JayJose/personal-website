@@ -38,3 +38,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - layout.js good place to put shared elements (navbar, footer)
 - layouts can be nested
 - can fetch data in layouts (don't need to re-render)
+- add `experimental: { appDir: true }` to use `app` directory
+- add `"dev": "next dev --turbo"` to use turbopack
+  - this was removed as it looked like it was causing page to stutter...
+- fetch
+  - cache option
+  - revalidate option
+- getStaticParams (like getStaticProps)
