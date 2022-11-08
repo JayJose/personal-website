@@ -6,10 +6,11 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function RootLayout({ children }) {
+  const title = process.env.TITLE;
   return (
     <html>
       <head>
-        <title>John Murray</title>
+        <title>{title}</title>
       </head>
       <body>
         <main>
