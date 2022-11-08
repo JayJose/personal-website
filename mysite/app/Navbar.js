@@ -22,12 +22,12 @@ export default function Navbar() {
         </li>
         <li className="navbar--item">
           <a href={linkedinLink}>
-            <Linkedin></Linkedin>
+            <Linkedin color={"black"} />
           </a>
         </li>
         <li className="navbar--item">
           <a href={githubLink}>
-            <Github></Github>
+            <Github color={"black"} />
           </a>
         </li>
       </ul>

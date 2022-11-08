@@ -33,16 +33,15 @@ nav {
 }
 
 .navbar {
-  align-content: center;
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  border-bottom: 0.5rem solid blueviolet;
+  font-weight: 200;
 }
 
 .logo {
-  font-weight: 200;
+  margin: 0;
+  padding: 0.5rem;
+  font-weight: 400;
 }
 
 .navbar--items {
@@ -50,13 +49,12 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin: 0;
-  padding: 0.25rem;
+
 }
 
 .navbar--item {
   margin: 0;
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 .footer > p {
