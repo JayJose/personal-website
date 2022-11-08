@@ -1,25 +1,32 @@
 "use client";
 
 import { Github, Linkedin } from "grommet-icons";
+import Link from "next/link";
 
 export default function Navbar() {
+  const linkedinLink = process.env.LINKEDIN;
+  const githubLink = process.env.GITHUB;
   return (
     <nav class="navbar">
       <ul>
         <li>
-          <a href="#">Home</a>
+          <Link href="/">Home</Link>
         </li>
         <li>
-          <a href="#">About</a>
+          <Link href="/about">About</Link>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <Link href="/contact">Contact</Link>
         </li>
         <li>
-          <Linkedin></Linkedin>
+          <a href={linkedinLink}>
+            <Linkedin></Linkedin>
+          </a>
         </li>
         <li>
-          <Github></Github>
+          <a href={githubLink}>
+            <Github></Github>
+          </a>
         </li>
       </ul>
     </nav>
