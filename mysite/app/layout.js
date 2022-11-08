@@ -6,9 +6,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 export default function RootLayout({ children }) {
-  const copy = "\u00A9";
-  const year = new Date().getFullYear();
-  const me = "John Murray";
   return (
     <html>
       <head>
