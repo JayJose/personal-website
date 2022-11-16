@@ -1,3 +1,3 @@
-export default function BlogLayout({ children }) {
+export default function AboutLayout({ children }) {
   return <section>{children}</section>;
 }

@@ -11,21 +11,21 @@ export default function Navbar() {
     <nav className="navbar">
       <p className="logo">John Murray</p>
       <ul className="navbar--items">
-        <li className="navbar--item">
+        <li>
           <Link href="/">Home</Link>
         </li>
-        <li className="navbar--item">
+        <li>
           <Link href="/about">About</Link>
         </li>
-        <li className="navbar--item">
+        <li>
           <Link href="/contact">Contact</Link>
         </li>
-        <li className="navbar--item">
+        <li className="navbar--icon">
           <a href={linkedinLink}>
             <Linkedin color={"black"} />
           </a>
         </li>
-        <li className="navbar--item">
+        <li className="navbar--icon">
           <a href={githubLink}>
             <Github color={"black"} />
           </a>

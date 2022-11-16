@@ -27,7 +27,7 @@ a {
 
 nav {
   width: 100%;
-  background-color: darkgreen;
+  background-color: royalblue;
   margin: 0;
   padding: 0;
 }
@@ -35,6 +35,8 @@ nav {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: white;
   font-weight: 200;
 }
 
@@ -46,15 +48,16 @@ nav {
 
 .navbar--items {
   display: flex;
+  width: 250px;
+  align-items: center;
+  justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 
-.navbar--item {
-  margin: 0;
-  padding: 0.5rem;
+.navbar--icon {
+margin-top: 2px;
 }
 
 .footer > p {
