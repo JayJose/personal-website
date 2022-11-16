@@ -7,13 +7,20 @@ export default function Navbar() {
   const name = process.env.NAME;
   const linkedinLink = process.env.LINKEDIN;
   const githubLink = process.env.GITHUB;
+
+  const pathname = "/home"; //TODO: hide HOME if on HOME
+
   return (
     <nav className="navbar">
       <p className="logo">John Murray</p>
       <ul className="navbar--items">
-        <li>
-          <Link href="/">Home</Link>
-        </li>
+        {pathname === "/" ? (
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+        ) : (
+          ""
+        )}
         <li>
           <Link href="/about">About</Link>
         </li>
