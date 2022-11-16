@@ -4,7 +4,6 @@ import { Github, Linkedin } from "grommet-icons";
 import Link from "next/link";
 
 export default function Navbar() {
-  const name = process.env.NAME;
   const linkedinLink = process.env.LINKEDIN;
   const githubLink = process.env.GITHUB;
 
