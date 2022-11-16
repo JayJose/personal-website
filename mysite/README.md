@@ -32,3 +32,18 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+#### Next 13 notes
+
+- layout.js good place to put shared elements (navbar, footer)
+- layouts can be nested
+- can fetch data in layouts (don't need to re-render)
+- add `experimental: { appDir: true }` to use `app` directory
+- add `"dev": "next dev --turbo"` to use turbopack
+  - this was removed as it looked like it was causing page to stutter...
+- fetch
+  - cache option
+  - revalidate option
+- getStaticParams (like getStaticProps)
+- error pages
+- loading pages
