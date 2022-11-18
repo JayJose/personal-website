@@ -11,10 +11,20 @@ export default function RootLayout({ children }) {
     <html>
       <head>
         <title>{title}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
+        ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        ></link>
       </head>
       <body>
         <Navbar />
-        <main>{children}</main>
+        <main className="main">{children}</main>
         <Footer />
       </body>
     </html>

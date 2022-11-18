@@ -14,20 +14,13 @@ export default function Navbar() {
       </p>
       <ul className="navbar--items">
         <li>
-          <Link href="/about">About</Link>
-        </li>
-        <li>
           <Link href="/contact">Contact</Link>
         </li>
-        <li className="navbar--icon">
-          <a href={linkedinLink}>
-            <Linkedin color={"black"} />
-          </a>
+        <li>
+          <Link href="/dogs">Dogs</Link>
         </li>
-        <li className="navbar--icon">
-          <a href={githubLink}>
-            <Github color={"black"} />
-          </a>
+        <li>
+          <Link href="/work">Work</Link>
         </li>
       </ul>
     </nav>
