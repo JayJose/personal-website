@@ -4,38 +4,23 @@ import { Github, Linkedin } from "grommet-icons";
 import Link from "next/link";
 
 export default function Navbar() {
-  const name = process.env.NAME;
   const linkedinLink = process.env.LINKEDIN;
   const githubLink = process.env.GITHUB;
 
-  const pathname = "/home"; //TODO: hide HOME if on HOME
-
   return (
     <nav className="navbar">
-      <p className="logo">John Murray</p>
+      <p className="logo">
+        <Link href="/">John Murray</Link>
+      </p>
       <ul className="navbar--items">
-        {pathname === "/" ? (
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-        ) : (
-          ""
-        )}
-        <li>
-          <Link href="/about">About</Link>
-        </li>
         <li>
           <Link href="/contact">Contact</Link>
         </li>
-        <li className="navbar--icon">
-          <a href={linkedinLink}>
-            <Linkedin color={"black"} />
-          </a>
+        <li>
+          <Link href="/dogs">Dogs</Link>
         </li>
-        <li className="navbar--icon">
-          <a href={githubLink}>
-            <Github color={"black"} />
-          </a>
+        <li>
+          <Link href="/work">Work</Link>
         </li>
       </ul>
     </nav>
