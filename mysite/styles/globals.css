@@ -1,9 +1,11 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&family=Roboto&display=swap'); */
+
 html,
 body {
   padding: 0;
   margin: 00;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 a {
@@ -19,31 +21,37 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: #A020F0;
   }
 }
 
 nav {
   width: 100%;
-  background-color: royalblue;
+  height: 8vh;
+  background-color: #66d8ba;
   margin: 0;
   padding: 0;
+  border-bottom: 0.35rem solid white;
+  z-index: 3;
+  top: 0;
+  position: sticky;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  font-weight: 200;
+  color: black;
+  font-weight: 400;
 }
 
 .logo {
   margin: 0;
-  padding: 0.5rem;
-  font-weight: 400;
+  padding: 1rem;
+  font-size: 1.5rem;
 }
 
 .navbar--items {
@@ -54,14 +62,51 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 1.25rem;
 }
 
 .navbar--icon {
-margin-top: 2px;
+  margin-top: 2px;
 }
 
-.footer > p {
+.main {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  height: 80vh;
+  width: 80%;
+}
+
+
+.footer > * {
   text-align: center;
-  font-weight: 200;
-  font-size: small;
+  font-weight: 400;
+  font-size: 0.75rem;
+  padding: 0.15rem;
+  margin: 0.25rem;
+}
+
+.footer--icons {
+  margin: 5px
+}
+
+.contact {
+  margin: auto;
+  height: 85vh;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.contact > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact--header {
+  color: black
+}
+
+.contact--item {
+  color: black
 }
